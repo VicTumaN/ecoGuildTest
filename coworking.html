@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЭкоГильдия МГУ</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js">
+</script>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script>
+        $(function () {  
+    $('.header-nav__items li a').each(function () { 
+        var location = window.location.href; 
+        var link = this.href;  
+        if(location == link) { 
+            $(this).addClass('active');
+        }
+    });
+});
+    </script>
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <nav class="header-nav">
+                        <ul class="header-nav__items">
+                            <div class="header-adaptive"></div>
+                            <li><a href="publications-archive.php">Просвещайся</a></li>
+                            <li><a href="#">Вдохновляйся</a></li>
+                            <li><a href="#">Присоединяйся</a></li>
+                        </ul>
+                    </nav> 
+                </div>
+                <div class="col-2 header-nav__img-div">
+                    <a class="header-nav__img" href="index.php">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="col-5">
+                    <nav class="header-nav">
+                        <ul class="header-nav__items">
+                            <li><a href="structure.php">О нас</a></li>
+                            <li><a href="#">Календарь событий</a></li>
+                            <li><a href="coworking.php">Сотрудничество</a></li>
+                            <button class="header-search">
+                                <form action="#" class="header-search__form">
+                                    <input type="text" class="header-search__form-input" placeholder="поиск...">
+                                    <button type="submit" class="header-search__form-submit"></button>
+                                </form>
+                            </button>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+<body>
+<section class="achieve">
+    <div class="container">
+    <h2 class="section-title">Наши достижения</h2>
+    <div class="achieve-boxes">
+        <div class="achieve-box">
+            <span class="achieve-box__number">12</span>
+            акций <br> проведено
+        </div>
+        <div class="achieve-box">
+        <span class="achieve-box__number">100</span>
+            контейнеров раздельного <br> сбора установлено
+        </div>
+        <div class="achieve-box">
+            <span class="achieve-box__number">18</span>
+            тонн отходов собрано и сдано на переработку
+        </div>
+        <div class="achieve-box">
+            <span class="achieve-box__number">500</span>
+            постоянных участников (посетителей) акций
+        </div>
+        <div class="achieve-box">
+            <span class="achieve-box__number">40</span>
+            волонтеров задействовано
+        </div>
+    </div>
+    </div>
+</section>
+<section class="collected">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-12">
+                <h2 class="collected-title">Собрано:</h2>
+            </div>
+            <div class="col-lg-7 col-12">
+            <div class="collected-circles">
+                <div class="collected-circle"><span class="collected-circle__number">2</span> тонны <br> текстиля</div>
+                <div class="collected-circle"><span class="collected-circle__number">3</span> тонны <br> макулатуры</div>
+                <div class="collected-circle"><span class="collected-circle__number">300</span> кг батареек</div>
+                <div class="collected-circle"><span class="collected-circle__number">200</span> кг добрых крышечек</div>
+                <div class="collected-circle"></div>
+                <div class="collected-circle"></div>
+                <div class="collected-circle"></div></div>
+            </div>
+        </div>
+<!-- /.col7 -->
+    </div>
+</section>
+<section class="partners">
+    <h2 class="section-title">Наши партнеры</h2>
+</section>
+<section class="docs">
+    <div class="container">
+        <h2 class="section-title">Документы</h2>
+        <ul class="docs-list">
+            <li><span class="clickable-link">Кликабельная ссылка на документ</span></li>
+            <li><span class="clickable-link">Кликабельная ссылка на документ</span></li>
+            <li><span class="clickable-link">Кликабельная ссылка на документ</span></li>
+            <li><span class="clickable-link">Кликабельная ссылка на документ</span></li>
+        </ul>
+    </div>
+</section>
+<section class="contacts">
+    <div class="container">
+        <h2 class="section-title">Контакты ответственных</h2>
+        <div class="contacts-div">
+            <div class="contacts-item">
+            <div class="contacts-name">
+                <div class="contacts-name__img">
+                    <img src="img/coworking/person.svg" alt="">
+                </div>
+                <div class="contacts-name__name">Имя Фамилия</div>
+            </div>
+            <div class="contacts-phone">
+                <div class="contacts-phone__img">
+                    <img src="img/coworking/call-outline.svg" alt="">
+                </div>
+                <a class="contacts-phone__phone" href="#">+7 (909) 407-07-07</a>
+            </div>
+            <button class="contacts-vk" href="#">
+                <img src="img/coworking/vk-light.svg" alt="">
+            </button>
+            <button class="contacts-fb" href="#">
+                <img src="img/coworking/facebook-light.svg" alt="">
+            </button>
+            </div>
+            <div class="contacts-item">
+            <div class="contacts-name">
+                <div class="contacts-name__img">
+                        <img src="img/coworking/person.svg" alt="">
+                    </div>
+                    <div class="contacts-name__name">Имя Фамилия</div>
+                </div>
+                <div class="contacts-phone">
+                    <div class="contacts-phone__img">
+                        <img src="img/coworking/call-outline.svg" alt="">
+                    </div>
+                    <a class="contacts-phone__phone" href="#">+7 (909) 407-07-07</a>
+                </div>
+                <button class="contacts-vk" href="#">
+                    <img src="img/coworking/vk-light.svg" alt="">
+                </button>
+                <button class="contacts-fb" href="#">
+                    <img src="img/coworking/facebook-light.svg" alt="">
+                </button>
+            </div>
+            <div class="contacts-item">
+            <div class="contacts-name">
+                <div class="contacts-name__img">
+                        <img src="img/coworking/person.svg" alt="">
+                    </div>
+                    <div class="contacts-name__name">Имя Фамилия</div>
+                </div>
+                <div class="contacts-phone">
+                    <div class="contacts-phone__img">
+                        <img src="img/coworking/call-outline.svg" alt="">
+                    </div>
+                    <a class="contacts-phone__phone" href="#">+7 (909) 407-07-07</a>
+                </div>
+                <button class="contacts-vk" href="#">
+                    <img src="img/coworking/vk-light.svg" alt="">
+                </button>
+                <button class="contacts-fb" href="#">
+                    <img src="img/coworking/facebook-light.svg" alt="">
+                </button>
+            </div><div class="contacts-item">
+            <div class="contacts-name">
+                <div class="contacts-name__img">
+                        <img src="img/coworking/person.svg" alt="">
+                    </div>
+                    <div class="contacts-name__name">Имя Фамилия</div>
+                </div>
+                <div class="contacts-phone">
+                    <div class="contacts-phone__img">
+                        <img src="img/coworking/call-outline.svg" alt="">
+                    </div>
+                    <a class="contacts-phone__phone" href="#">+7 (909) 407-07-07</a>
+                </div>
+                <button class="contacts-vk" href="#">
+                    <img src="img/coworking/vk-light.svg" alt="">
+                </button>
+                <button class="contacts-fb" href="#">
+                    <img src="img/coworking/facebook-light.svg" alt="">
+                </button>
+            </div>
+    </div>
+</section>
+</body>
+</html>

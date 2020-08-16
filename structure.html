@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЭкоГильдия МГУ</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js">
+</script>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script>
+        $(function () {  
+    $('.header-nav__items li a').each(function () { 
+        var location = window.location.href; 
+        var link = this.href;  
+        if(location == link) { 
+            $(this).addClass('active');
+        }
+    });
+});
+    </script>
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <nav class="header-nav">
+                        <ul class="header-nav__items">
+                            <div class="header-adaptive"></div>
+                            <li><a href="publications-archive.php">Просвещайся</a></li>
+                            <li><a href="#">Вдохновляйся</a></li>
+                            <li><a href="#">Присоединяйся</a></li>
+                        </ul>
+                    </nav> 
+                </div>
+                <div class="col-2 header-nav__img-div">
+                    <a class="header-nav__img" href="index.html">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="col-5">
+                    <nav class="header-nav">
+                        <ul class="header-nav__items">
+                            <li><a href="structure.html">О нас</a></li>
+                            <li><a href="#">Календарь событий</a></li>
+                            <li><a href="coworking.html">Сотрудничество</a></li>
+                            <button class="header-search">
+                                <form action="#" class="header-search__form">
+                                    <input type="text" class="header-search__form-input" placeholder="поиск...">
+                                    <button type="submit" class="header-search__form-submit"></button>
+                                </form>
+                            </button>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+<body>
+<section class="structure">
+    <div class="container">
+        <h2 class="section-title">Наша структура</h2>
+        <div class="structure-items">
+            <a class="structure-item" href="#">
+                <div class="structure-item__img"></div>
+                <div class="structure-item__title">Отдел <br> просвещения <br> онлайн и пиар</div>
+            </a>
+            <a class="structure-item" href="#">
+                <div class="structure-item__img"></div>
+                <div class="structure-item__title">Отдел <br> мероприятий <br>
+и фестивалей</div>
+            </a>
+            <a class="structure-item" href="#">
+                <div class="structure-item__img"></div>
+                <div class="structure-item__title">Отдел <br> раздельного <br> сбора отходов</div>
+            </a>
+            <a class="structure-item" href="#">
+                <div class="structure-item__img"></div>
+                <div class="structure-item__title">Отдел новых <br> проектов</div>
+            </a>
+            <a class="structure-item" href="#">
+                <div class="structure-item__img"></div>
+                <div class="structure-item__title">Отдел <br> филиалов <br> ЭкоГильдии</div>
+            </a>
+            <a class="structure-item" href="#">
+                <div class="structure-item__img"></div>
+                <div class="structure-item__title">Творческий <br> отдел</div>
+            </a>
+            <a class="structure-item" href="single-structure.html">
+                <div class="structure-item__img"></div>
+                <div class="structure-item__title">Отдел внешних <br> связей</div>
+            </a>
+            <a class="structure-item" href="#">
+                <div class="structure-item__img"></div>
+                <div class="structure-item__title">Отдел HR</div>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="history">
+    <div class="container">
+        <h2 class="section-title">История становления ЭкоГильдии</h2>
+        <p class="regular-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+        <p class="regular-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+        <a class="button history-button" href="#">Читать далее</a>
+    </div>
+</section>
+<section class="read"></section>
+</body>
+</html>
